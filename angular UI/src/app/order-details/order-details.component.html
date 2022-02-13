@@ -1,0 +1,20 @@
+<h2>Order Details</h2> 
+
+<hr/>
+<div *ngIf="order">
+  <div>
+    <label><b>Name: </b></label> {{order.userName}}
+  </div>
+  <div>
+    <label><b>Address: </b></label> {{order.address}}
+  </div>
+  <div>
+    <label><b>Ordered Item: </b></label> {{order.orderItem}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Order List</button><br>
+
+
